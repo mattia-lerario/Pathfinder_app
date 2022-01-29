@@ -25,10 +25,10 @@ export default class App extends React.Component {
 
     this.position = new Animated.ValueXY()
     this.state = {
-      currentIndex: 0
+      currentIndex: 0,
     }
   }
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.PanResponder = PanResponder.create({
 
       onStartShouldSetPanResponder: (evt, gestureState) => true,
@@ -49,7 +49,7 @@ export default class App extends React.Component {
       return (
         <Animated.View
           {...this.PanResponder.panHandlers}
-          key={item.id} style={[{ transform: this.position.getTranslateTransform() }, { height: SCREEN_HEIGHT - 120, width: SCREEN_WIDTH, padding: 10, position: 'absolute' }]}>
+          key={item.id} style={[{ transform: this.position.getTranslateTransform() }, { height: SCREEN_HEIGHT, width: SCREEN_WIDTH, padding: 10, position: 'absolute' }]}>
 
           <Image
             style={{ flex: 1, height: null, width: null, resizeMode: 'cover', borderRadius: 20 }}
