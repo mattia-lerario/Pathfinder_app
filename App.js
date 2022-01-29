@@ -11,11 +11,11 @@ import { StyleSheet, Text, View, Dimensions, Image, Animated, PanResponder } fro
 const SCREEN_HEIGHT = Dimensions.get('window').height
 const SCREEN_WIDTH = Dimensions.get('window').width
 const Users = [
-  { id: "1", uri: require('C:\Users\matti\OneDrive\Skrivebord\soft-ui-pro-react-native-main\src\assets\images\card2@3x.png') },
-  { id: "2", uri: require('./src/assets/images/card1@2x.png') },
-  { id: "3", uri: require('./src/assets/images/card1@2x.png') },
-  { id: "4", uri: require('./src/assets/images/card1@2x.png') },
-  { id: "5", uri: require('./src/assets/images/card1@2x.png') },
+  { id: "1",  },
+  { id: "2",  },
+  { id: "3",  },
+  { id: "4",  },
+  { id: "5",  },
 ]
 
 export default class App extends React.Component {
@@ -99,4 +99,4 @@ const styles = StyleSheet.create({
       <AppNavigation />
     </DataProvider>
   );
-}*/
+  }*/
